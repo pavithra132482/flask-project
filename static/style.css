@@ -1,0 +1,235 @@
+/* ===============================
+   🔹 RESET (FOR ALL PAGES)
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   🔹 BODY BACKGROUND (ALL PAGES)
+================================= */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    min-height: 100vh;
+}
+
+/* ===============================
+   🔹 NAVBAR (INDEX / ADD / VIEW)
+================================= */
+.navbar {
+    background: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   🔹 CONTAINER (GENERAL PAGES)
+================================= */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* ===============================
+   🔹 CARD (ALL PAGES BOX)
+================================= */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ===============================
+   🔹 HEADINGS
+================================= */
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ===============================
+   🔹 FORM (ALL FORMS)
+================================= */
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ===============================
+   🔹 BUTTON (DEFAULT)
+================================= */
+button {
+    width: 95%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* ===============================
+   🔹 TABLE (VIEW PAGE)
+================================= */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: white;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+}
+
+/* ===============================
+   🔹 LINKS
+================================= */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   🔥 LOGIN & REGISTER PAGE (SPECIAL DESIGN)
+============================================= */
+
+/* Center login/register page */
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Small centered card */
+.auth-card {
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Full width inputs */
+.auth-card input {
+    width: 100%;
+}
+
+/* Stylish gradient button */
+.auth-card button {
+    width: 100%;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border: none;
+}
+
+.auth-card button:hover {
+    opacity: 0.9;
+}
+
+/* Small text below form */
+.auth-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* ============================================
+   🟢 ADD COMPLAINT PAGE
+============================================= */
+textarea {
+    height: 100px;
+}
+
+/* ============================================
+   🟣 VIEW PAGE ACTION LINKS
+============================================= */
+td a {
+    margin: 0 5px;
+    font-weight: bold;
+}
+/* ===============================
+   📊 ADMIN DASHBOARD
+================================= */
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.stat-box {
+    flex: 1;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Different colors */
+.total {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+.solved {
+    background: linear-gradient(to right, #56ab2f, #a8e063);
+}
+
+.pending {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+/* Number styling */
+.stat-box p {
+    font-size: 28px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.stat-box:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+

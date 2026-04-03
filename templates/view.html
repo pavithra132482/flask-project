@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Complaints</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="navbar">
+    <a href="/"><i class="fas fa-home"></i> Home</a>
+
+    {% if session.get('user') %}
+        <a href="/add"><i class="fas fa-plus-circle"></i> Add</a>
+        <a href="/view"><i class="fas fa-list"></i> View</a>
+        <a href="/admin"><i class="fas fa-chart-line"></i> Dashboard</a>
+        <a href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    {% else %}
+        <a href="/login"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a href="/register"><i class="fas fa-user-plus"></i> Register</a>
+    {% endif %}
+</div>
+
+
+
+<div class="container">
+    <div class="card">
+        <h2>All Complaints</h2>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Complaint</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            {% for c in complaints %}
+            <tr>
+                <td>{{ c[0] }}</td>
+                <td>{{ c[1] }}</td>
+                <td>{{ c[2] }}</td>
+                <td>{{ c[3] }}</td>
+                <td>
+                    <a href="/update/{{ c[0] }}">Solve</a> |
+                    <a href="/delete/{{ c[0] }}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
